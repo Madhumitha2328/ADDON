@@ -1,0 +1,109 @@
+polymorphism
+	ability of a single action to behave different based on the context	
+	objects of differnt classes
+
+TYPES OF POLYMORPHISM
+	complie time=>method overloading=>selection process
+	run time =>method overriding=>is a relationship .what we updated it be display
+EX:
+package Programs;
+interface Superclass1{
+	void Sending();
+}
+interface Superclass2{
+	void Sended();
+}
+class SubClass implements Superclass1,Superclass2{
+	public void Sending() {
+		System.out.println("Superclass1");
+	}
+	public void Sended() {
+		System.out.println("Superclass2");
+	}
+}
+public class Main {
+	public static void main(String[] args) {
+		SubClass s = new SubClass();
+		s.Sended();
+		s.Sending();
+	}
+
+}
+
+ABSTRACTION
+ hiding implemention details and showing
+ the essential features of an object
+
+implement using abstract and interface
+using abstract keyword the program can run
+
+EX:
+//abstract class
+abstract calss Animal{
+//abstract method (no implementation)
+abstract void sound();
+//regular method
+void sleep(){
+System.out.println("slepp");
+}
+}
+
+if you know the implementation partially,use an abstract class.
+if you don't know the implementation at all ,use an interface.
+
+EX:
+ABSTRACTION
+
+package Programs;
+abstract class Vechile{
+	abstract void Startsusing();
+}
+class Bike extends Vechile{
+	void Startsusing() {
+		System.out.println("Bike starts with kicking");
+	}
+}
+public class Vechiles{
+public static void main(String[] args) {
+		Vechile ref=new Bike();
+		ref.Startsusing();
+
+	}
+
+}
+
+
+MULTIPLE INHERITANCE
+
+package Programs;
+interface Superclass1{
+	void Sending();
+}
+interface Superclass2{
+	void Sended();
+}
+class SubClass implements Superclass1,Superclass2{
+	public void Sending() {
+		System.out.println("Superclass1");
+	}
+	public void Sended() {
+		System.out.println("Superclass2");
+	}
+}
+public class Main {
+	public static void main(String[] args) {
+		SubClass s = new SubClass();
+		s.Sended();
+		s.Sending();
+	}
+
+INTERFACES
+
+only public static final (constants) variables are allowed.
+all interfaces methods are public & abstract by default.
+
+full abstraction
+multiple classes
+
+
+

@@ -1,0 +1,13 @@
+without creating an object a static can run the program
+
+CHARACTER
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner ref=new Scanner(System.in);
+        System.out.println("ENTER YOUR CHAR VALUE:");
+        char ch=ref.nextLine().charAt(4);
+        System.out.println(ch);
+    }
+}

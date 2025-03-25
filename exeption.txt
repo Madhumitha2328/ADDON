@@ -1,0 +1,22 @@
+EXCEPTION HANDLING
+	it is a run time errors,ensuring the program can recover or provide meaningful error messages.
+	it use try catch.throw,and finally
+
+keywords
+try=>block of code
+catch=>handle exception
+throw=>throes an exception
+
+public class Main{
+public static void main(String[] agrs){
+try{
+int num=10/0;
+}
+catch(ArithmeticException e){
+System.out.println("Cannot divide by Zero:" +e.getMessage());
+}
+finally{
+System.out.println("Exception completed");
+}
+}
+}

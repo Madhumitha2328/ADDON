@@ -1,0 +1,5 @@
+COLLECTION IN JAVA
+
+COLLECTION FRAMEWORK
+	 a set of classes and intrfaces for representing and manipulating colletion.
+	store,retrive and manipulate

@@ -1,0 +1,123 @@
+Java:
+ 	one for looping another for execution
+
+OOPS
+
+Class :
+ 	Blue print thet contains states(variable) and behaviour.states refers
+to data member
+(variables).behaviour refers to memeber function.
+
+Object:
+	Real world entity that have its own states and behaviour.
+
+
+
+class Main {
+    public static void main(String[] args) { 
+        Objectoriented ref=new Objectoriented();
+        System.out.println("Non Static Var:"+ref.Name);
+        System.out.println("Non Static Var:"+ref.Rollno);
+        System.out.println("Static Var:"+Objectoriented.a);
+        Objectoriented.Display();
+    }
+}
+
+public class Objectoriented{
+    //non static member
+    String Name="JAVA";
+    String Rollno="2326JA27";
+    static int a=10;
+    public static void Display(){
+        System.out.println("HELLO");
+    }
+}
+
+
+CONSTRUCTOR
+	Special method or member function must have same name has that of 
+class name.Constructor does not allow access modifier and also written type
+
+EX:
+class Main{
+    public static void main(String[] args){
+    Sample ref=new Sample("BMW","M5");    
+    System.out.println(ref.carname);
+    System.out.println(ref.carmodel);
+    Sample ref1=new Sample("QUALIS","M3");    
+    System.out.println(ref1.carname);
+    System.out.println(ref1.carmodel);
+    
+    }
+}
+class Sample{
+    String carname;
+    String carmodel;
+    Sample(String carname,String carmodel){
+        this.carname=carname;
+        this.carmodel=carmodel;
+        System.out.println("Default Constructor");
+        
+    }
+
+ENCAPSULATION:
+
+class Main{
+    public static void main(String[] args){
+    Account ac=new Account("Madhu",200);
+    System.out.println("Accholder Name:"+ac.getAccholder());
+     System.out.println("Balance:"+ac.getBalance());
+    
+    }
+}
+class Account{
+    private String Accholder;
+    private int Balance;
+    Account(String Accholder,int Balance){
+    this.Accholder=Accholder;
+    this.Balance=Balance;
+}
+public String getAccholder(){
+return  Accholder;
+    
+}
+public int getBalance(){
+  return Balance;  
+}
+}
+}
+
+
+class Main{
+    public static void main(String[] args){
+    Account ac=new Account("Madhu",200);
+    System.out.println("Accholder Name:"+ac.getAccholder());
+     System.out.println("Balance:"+ac.getBalance());
+     ac.setAccholder("Dhilip");
+     System.out.println("update Accholder:"+ac.getAccholder());
+     ac.setBalnce(1200);
+     System.out.println("update Balance:"+ac.getBalance());
+    
+    }
+}
+class Account{
+    private String Accholder;
+    private int Balance;
+    Account(String Accholder,int Balance){
+    this.Accholder=Accholder;
+    this.Balance=Balance;
+}
+public String getAccholder(){
+return  Accholder;
+    
+}
+public int getBalance(){
+  return Balance;  
+}
+public void setAccholder(String Accholder){
+    this.Accholder=Accholder;
+}
+public void SetBalance(double Balance){
+    this.Balance=Balance;
+}
+}

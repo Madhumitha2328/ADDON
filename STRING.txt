@@ -1,0 +1,104 @@
+
+STRING
+
+class Main {
+    public static void main(String[] args) {
+        //using literal //string pool//allow duplicate//faster
+        String s1="Hello";
+        //using new keyword  //heap memory //prevent duplication//slower
+        String s2=new String("hello");
+        System.out.println(s1==s2);
+        System.out.println(s1.equals(s2));
+        
+    }
+}
+
+P1
+ 
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        //using literal //string pool
+        String s1="hello";
+        Scanner input= new Scanner(System.in);
+        //using new keyword  //heap memory
+        String s2=input.nextLine();
+        System.out.println(s1.equals(s2));
+        
+    }
+}
+
+P2
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+    
+        Scanner input= new Scanner(System.in);
+        String s1=input.nextLine();
+        String s2=input.nextLine();
+        System.out.println(s1.equals(s2));
+        
+    }
+}
+
+P3
+
+class Main {
+    public static void main(String[] args) {
+        //using literal //string pool//allow duplicate//faster
+        String t="JAVA IS FUN";
+        //using new keyword  //heap memory //prevent duplication//slower
+        String s1="JAVA IS FUN";
+        String s2=new String("JAVA IS HARD");
+        System.out.println(t==s1);
+        System.out.println(t==s2);
+         System.out.println(s1==s2);
+       
+        
+    }
+}
+
+P4
+
+public class Main {
+    public static void main(String[] args) {
+        String str="Programming Language";
+System.out.println("Substring from index 5:"+str.substring(5));
+System.out.println("Substring from index 0 to 4:"+str.substring(0,4));
+        
+    }
+}
+
+
+P4
+public class IndexOfExample{
+    public static void main(String[]args){
+        String str="JAVA PROGRAMMING";
+        System.out.println("Index of'prog':"+str.indexOf("Prog"));
+        System.out.println("Index of'z':"+str.indexOf('z'));
+    }
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    String s1 = new String(" java ");
+    String s2 = " java ";
+    String s3 =s1.intern();
+    System.out.println(s1 == s2); 
+     System.out.println(s2 == s3); 
+  }
+}
+
+
+wrapper 
+
+    wrapper classes in java provide a way to use primitive data types(int,float,char) as objects
+    each primitive type has corresponding   
+
+
+int max=0;
+for(int i=0;i<arr.length();i++){
+system.out.println(integer.parseint(arr[i])+1);
+}
